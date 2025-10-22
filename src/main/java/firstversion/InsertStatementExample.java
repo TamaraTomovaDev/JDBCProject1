@@ -1,14 +1,10 @@
 package firstversion;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-
-import static firstversion.CreateStatementExample.printSQLException;
 
 public class InsertStatementExample {
     private static String INSERT_USERS_SQL = "INSERT INTO user" +
