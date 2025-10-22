@@ -9,7 +9,7 @@ public class SelectStatementExample {
         try (Connection connection = DriverManager.
                 getConnection("jdbc:mysql://localhost:3306/mysql_database?useSSL=false", "intec", "intec-123");
              PreparedStatement preparedStatement = connection.prepareStatement(QUERY);){
-            preparedStatement.setInt(1,4);
+            preparedStatement.setInt(1,3);
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()){
